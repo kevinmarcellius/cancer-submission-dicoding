@@ -28,6 +28,7 @@ async function postPredictionHandler(request, h) {
         }).code(201);
 
     } catch (error) {
+        console.log(error);
         return h.response({
             status: 'fail',
             message: 'Terjadi kesalahan dalam melakukan prediksi',
